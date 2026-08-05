@@ -58,7 +58,7 @@
 
 .video-header {
   position: relative;
-  width: 100%;
+  padding: 0 20px;
   height: 200px;
   overflow: hidden;
   display: flex;
@@ -73,7 +73,31 @@ video {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
   object-fit: cover;
   z-index: 0;
+}
+
+.hero-page {
+  border-top: solid 1mm black;
+  margin-top: -1mm;
+  border-bottom: solid 1mm black;
+  margin-bottom: -1mm;
+  background-color: green;
+  position: relative;
+  padding: 0 20px;
+  height: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-paragraph {
+    background-color: teal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0 20px;
+    position: absolute;
+    right: 300px;
+    text-align: center;
+    margin: 0;
+    font-size: clamp(10px, 10px, 10px)
 }
