@@ -11,6 +11,27 @@ footer {
     text-align: center;
 }
 
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+}
+
+.icon-container {
+    text-align: center;
+}
+
+ul.icons {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 20px;    
+}
+
 .left{
     left: 400px; 
 }
@@ -71,7 +92,7 @@ footer {
     z-index: 3;
 }
 
-.video-header {
+.hero-header {
   position: relative;
   padding: 0 20px;
   height: 200px;
