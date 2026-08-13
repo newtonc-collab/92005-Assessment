@@ -39,6 +39,11 @@ ul.icons {
     right: 300px;
 }
 
+.center{
+    left: center;
+    right: center;
+}
+
 .topbar {
     background-color: #333;
     display: flex;
@@ -88,7 +93,6 @@ ul.icons {
     font-family: 'Lucida Handwriting';
     text-align: center;
     color: white;
-    background-color: darkslategrey;
     z-index: 3;
 }
 
@@ -118,7 +122,7 @@ video {
   margin-top: -1mm;
   border-bottom: solid 1mm black;
   margin-bottom: -1mm;
-  background-color: green;
+  background-color: #5581AA;
   position: relative;
   padding: 0 20px;
   height: 1000px;
@@ -128,7 +132,7 @@ video {
 }
 
 .hero-paragraph {
-    background-color: teal;
+    background-color: #AA7E55;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 0;
     position: absolute;
@@ -138,6 +142,11 @@ video {
     height: 300px;
     font-size: 20px;
     text-wrap: wrap;
+    transition: transform 0.4s ease;
+}
+
+.hero-paragraph:hover {
+    transform: scale(1.1)
 }
 
 .image-container { 
@@ -146,7 +155,13 @@ video {
   margin: 0;
   padding: 0 20px;
   width: 300px; 
-  height: 300px; 
+  height: 300px;
+  transition: width 0.4s ease, height 0.4s ease;
+}
+
+.image-container:hover {
+    width: 325px;
+    height: 325px;
 }
 
 .image-container img { 
@@ -157,8 +172,20 @@ video {
 }
 
 h2 {
-    background-color: teal; 
+    background-color: #3C5E7C; 
     z-index: 1;
     text-align: center;
     margin: 0;
+}
+
+.hero-image-header {
+    position: absolute; 
+    object-fit: fill;
+    height: auto;
+    width: auto;
+    justify-content: center;
+}
+
+.paint{
+    z-index: 10;
 }
